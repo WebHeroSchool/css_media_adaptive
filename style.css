@@ -1,19 +1,48 @@
-@media (min-width: 320px) {
+@media screen and  (max-width: 480px) {
     /* smartphones, iPhone, portrait 480x320 phones */
-    p {
-        font-size: 10px;
+    nav.menu__mobile {
+        background-color: white;
+        border-bottom: 18px double black;
+        border-top: 6px solid black;
+        cursor: pointer;
+        display: block;
+        height: 6px;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        width: 32px;
     }
-}
 
-@media (min-width: 481px) {
-    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .menu a {
+        visibility: hidden;
+    }
+
     p {
         font-size: 20px;
     }
 }
 
+.menu {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+}
+
+.menu a {
+    display: block;
+    width: 60px;
+    text-decoration: none;
+}
+
+@media (min-width: 481px) {
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    p {
+        font-size: 25px;
+    }
+}
+
 @media (min-width: 641px) {
-    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    /* portrait tablets, portrait iPad, landscape 800x480 or 854x480 phones */
     p {
         font-size: 30px;
     }
